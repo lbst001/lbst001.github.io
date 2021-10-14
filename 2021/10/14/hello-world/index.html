@@ -1,37 +1,109 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>
+    
+    Chonger&#39;s Blog
+  </title>
+  <meta name="author" content="Chonger">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  
+  <link rel="icon" href="/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+  <nav class="nav">
+    <div class="nav-bar">
+  <div class="title">
+    <a href="/." title="Chonger&#39;s Blog">Chonger&#39;s Blog</a>
+  </div>
+  <div class="menu-controller">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
 
-{% block page_class %}page-post-detail{% endblock %}
+<div class="menu">
+  
+  <li>
+    <a href="/" title="首页">首页</a>
+  </li>
+  
+  <li>
+    <a href="/archives" title="归档">归档</a>
+  </li>
+  
+  <li>
+    <a href="/tags" title="标签">标签</a>
+  </li>
+  
+</div>
+  </nav>
+  <main>
+    <div class="layout">
+      <article class="post">
+  <h1 class="title">
+    
+  </h1>
 
-
-{% block content %}
-
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
-
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
-    </div>
+  <div class="info">
+    <span class="date">2021-10-14</span>
   </div>
 
-{% endblock %}
+  <div class="content">
+    <hr>
+<h2 id="title-Hello-World"><a href="#title-Hello-World" class="headerlink" title="title: Hello World"></a>title: Hello World</h2><p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+  </div>
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+  
+  <div class="tags">
+    
+  </div>
+  
+</article>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="layout">
+      <div class="copy">
+  <p>
+    由 <a target="_blank" rel="noopener" href="https://hexo.io/" title="Hexo">Hexo</a> 强力驱动 |
+    主题 - <a target="_blank" rel="noopener" href="https://github.com/mintsweet/hexo-theme-cold" title="Cold">Cold</a>
+  </p>
+  <p>
+    
+    &copy;
+    
+    2017 -
+    
+    2021
+    <span>Chonger</span>
+  </p>
+</div>
+    </div>
+  </footer>
+</body>
+
+<script src="/js/main.js"></script>
